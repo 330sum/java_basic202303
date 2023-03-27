@@ -7,8 +7,8 @@ public class Hello {
 
 
         int a = 100;
+        String name = "김철수";
         double rn = Math.random();
         Scanner sc = new Scanner(System.in);
-
     }
 }
