@@ -44,6 +44,7 @@ public class DataType {
 
 
 
+        // char(2byte)
         // 문자 타입 : 한글자
         char c1 = 'A'; //65
 //        char c2 = 'AB'; // 안됨
