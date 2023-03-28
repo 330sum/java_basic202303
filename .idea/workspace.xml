@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="캐스팅">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="배열 퀴즈" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +193,42 @@
       <option name="project" value="LOCAL" />
       <updated>1679888404516</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="표준 입출력">
+      <created>1679979368828</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679979368828</updated>
+    </task>
+    <task id="LOCAL-00009" summary="array basic">
+      <created>1679979392266</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679979392266</updated>
+    </task>
+    <task id="LOCAL-00010" summary="배열 push">
+      <created>1679979410154</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679979410154</updated>
+    </task>
+    <task id="LOCAL-00011" summary="배열 pop">
+      <created>1679979424991</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679979424991</updated>
+    </task>
+    <task id="LOCAL-00012" summary="배열 퀴즈">
+      <created>1679979443068</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679979443068</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,7 +250,16 @@
     <MESSAGE value="데이터 타입" />
     <MESSAGE value="데이터 타입 수정" />
     <MESSAGE value="캐스팅" />
-    <option name="LAST_COMMIT_MESSAGE" value="캐스팅" />
+    <MESSAGE value="표준 입출력" />
+    <MESSAGE value="switch" />
+    <MESSAGE value="array basic" />
+    <MESSAGE value="배열 복사" />
+    <MESSAGE value="배열 push" />
+    <MESSAGE value="배열 push 함수" />
+    <MESSAGE value="배열 pop" />
+    <MESSAGE value="배열 pop 함수" />
+    <MESSAGE value="배열 퀴즈" />
+    <option name="LAST_COMMIT_MESSAGE" value="배열 퀴즈" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
