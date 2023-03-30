@@ -71,7 +71,7 @@ public class GMethodBasic {
             return arr2;
         }
     }
-    // if 위에서 alt+Enter -> 삼항연사자로 바꾸기
+    // if 위에서 alt+Enter -> 삼항연산자로 바꾸기
 
 
 
@@ -83,8 +83,8 @@ public class GMethodBasic {
         // void는 변수에 담을수 없음. 리턴값이 없기 때문에. 그래서 단독호출만 가능
         makeLine();
 
-        // ctrl + alt + v (addAll 위에서 변수만들기,
-        // ctrl + alt + n
+        // ctrl + alt + v (변수 추출하기)
+        // ctrl + alt + n (인라인으로 만들기)
         int r1 = addAll(new int[]{10, 20, 30});
         System.out.println("r1 = " + r1);
 

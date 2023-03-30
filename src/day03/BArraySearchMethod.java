@@ -1,6 +1,6 @@
 package day03;
 // 배열 검색 및 수정 함수
-public class BAraaySearchMethod {
+public class BArraySearchMethod {
 
     public static int indexOf(String target) {
 //        int index = -1; // 배열안에 없을 수 도 있기 때문에 -1로 초기값 지정

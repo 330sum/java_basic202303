@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="커밋!">
+    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="커밋">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day03/AAraaySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/AArraySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day03/BAraaySearchMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/BArraySearchMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day03/EArrayInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/EArrayInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day03/GMethodBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/GMethodBasic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +242,49 @@
       <option name="project" value="LOCAL" />
       <updated>1679979489814</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="배열검색">
+      <created>1680066022868</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680066022868</updated>
+    </task>
+    <task id="LOCAL-00015" summary="배열검색 퀴즈">
+      <created>1680066029159</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680066029159</updated>
+    </task>
+    <task id="LOCAL-00016" summary="배열 중간 삭제">
+      <created>1680066044690</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680066044690</updated>
+    </task>
+    <task id="LOCAL-00017" summary="다중배열">
+      <created>1680066062050</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680066062050</updated>
+    </task>
+    <task id="LOCAL-00018" summary="메서드 퀴즈 (미완)">
+      <created>1680066079834</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680066079834</updated>
+    </task>
+    <task id="LOCAL-00019" summary="커밋">
+      <created>1680066187882</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680066187882</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +316,15 @@
     <MESSAGE value="배열 pop 함수" />
     <MESSAGE value="배열 퀴즈" />
     <MESSAGE value="커밋!" />
-    <option name="LAST_COMMIT_MESSAGE" value="커밋!" />
+    <MESSAGE value="배열검색" />
+    <MESSAGE value="배열검색 퀴즈" />
+    <MESSAGE value="배열 중간 삭제" />
+    <MESSAGE value="배열 중간 삽입" />
+    <MESSAGE value="다중배열" />
+    <MESSAGE value="메서드 기본" />
+    <MESSAGE value="메서드 퀴즈 (미완)" />
+    <MESSAGE value="커밋" />
+    <option name="LAST_COMMIT_MESSAGE" value="커밋" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
