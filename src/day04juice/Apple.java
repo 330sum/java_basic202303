@@ -1,4 +1,4 @@
-package juice;
+package day04juice;
 
 public class Apple {
     public Apple() {

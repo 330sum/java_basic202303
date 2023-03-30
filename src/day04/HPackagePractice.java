@@ -7,11 +7,11 @@ package day04;
 public class HPackagePractice {
 
     public static void main(String[] args) {
-        new juice.Apple();
-        new fruit.Apple();
+        new day04juice.Apple();
+        new day04fruit.Apple();
 
-        new fruit.Banana();
-        new fruit.Grape();
+        new day04fruit.Banana();
+        new day04fruit.Grape();
         new day04.ADancer();
     }
 }
