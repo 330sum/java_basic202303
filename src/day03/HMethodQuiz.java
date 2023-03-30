@@ -1,46 +1,44 @@
 package day03;
 
-import java.util.Arrays;
-
 public class HMethodQuiz {
 
-    static String[] foods = {"떡볶이", "치킨", "파스타"};
-
-    public static void printFoods() {
-        System.out.println(Arrays.toString(foods));
-    }
-
-   public static void push(String newFood) {
-        String[] temp = new String[foods.length + 1];
-        for (int i = 0; i < foods.length; i++) {
-            temp[i] = foods[i];
-        }
-        temp[temp.length - 1] = newFood;
-        foods = temp;
-        temp = null;
-    }
-
-    public static void indexOf(String targetFood) {
-        for (int i = 0; i < foods.length; i++) {
-            if (targetFood.equals(foods[i]))
-
-        }
-    }
-
-
-    public static void main(String[] args) {
-
-        printFoods();
-        push("라면");
-        push("김치찌개");
-        printFoods();
-
-        // idx에 2가 리턴되어야 함.
-        int idx = indexOf("파스타");
-        // idx에 4가 리턴되어야 함.
-        int idx2 = indexOf("김치찌개");
-        // idx에 -1이 리턴되어야 함.
-        int idx3 = indexOf("짜장면");
+//    static String[] foods = {"떡볶이", "치킨", "파스타"};
+//
+//    public static void printFoods() {
+//        System.out.println(Arrays.toString(foods));
+//    }
+//
+//   public static void push(String newFood) {
+//        String[] temp = new String[foods.length + 1];
+//        for (int i = 0; i < foods.length; i++) {
+//            temp[i] = foods[i];
+//        }
+//        temp[temp.length - 1] = newFood;
+//        foods = temp;
+//        temp = null;
+//    }
+//
+//    public static void indexOf(String targetFood) {
+//        for (int i = 0; i < foods.length; i++) {
+//            if (targetFood.equals(foods[i]))
+//
+//        }
+//    }
+//
+//
+//    public static void main(String[] args) {
+//
+//        printFoods();
+//        push("라면");
+//        push("김치찌개");
+//        printFoods();
+//
+//        // idx에 2가 리턴되어야 함.
+//        int idx = indexOf("파스타");
+//        // idx에 4가 리턴되어야 함.
+//        int idx2 = indexOf("김치찌개");
+//        // idx에 -1이 리턴되어야 함.
+//        int idx3 = indexOf("짜장면");
 //
 //        remove("김치찌개"); // foods배열에서 김치찌개 제거
 //        remove("망고"); // 존재하지 않는 음식명입니다 출력.
@@ -55,6 +53,6 @@ public class HMethodQuiz {
 //        modify(2, "닭갈비");  // 2번 인덱스 데이터 닭갈비로 수정
 //        //clear();  // foods배열 모든 데이터 삭제
 
-    }
+//    }
 
 }

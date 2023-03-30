@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="커밋">
+    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day03/AAraaySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/AArraySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day03/BAraaySearchMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/BArraySearchMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day03/EArrayInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/EArrayInsert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day03/GMethodBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/GMethodBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day03/HMethodQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/HMethodQuiz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +63,13 @@
       <recent name="day02" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.HMethodQuiz">
-    <configuration name="DArrayDelete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day03.DArrayDelete" />
+  <component name="RunManager" selected="애플리케이션.Main">
+    <configuration name="BDancerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day04.BDancerMain" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day03.*" />
+          <option name="PATTERN" value="day04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EArrayInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day03.EArrayInsert" />
+    <configuration name="FFiedMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day04.FFiedMain" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day03.*" />
+          <option name="PATTERN" value="day04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day03.FMatrix" />
+    <configuration name="GStringCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day04.GStringCompare" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day03.*" />
+          <option name="PATTERN" value="day04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HMethodQuiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day03.HMethodQuiz" />
+    <configuration name="HPackagePractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day04.HPackagePractice" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day03.*" />
+          <option name="PATTERN" value="day04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MethodQuiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day03.MethodQuiz" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day04.array.Main" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day03.*" />
+          <option name="PATTERN" value="day04.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.HMethodQuiz" />
-        <item itemvalue="애플리케이션.MethodQuiz" />
-        <item itemvalue="애플리케이션.FMatrix" />
-        <item itemvalue="애플리케이션.EArrayInsert" />
-        <item itemvalue="애플리케이션.DArrayDelete" />
+        <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="애플리케이션.HPackagePractice" />
+        <item itemvalue="애플리케이션.GStringCompare" />
+        <item itemvalue="애플리케이션.FFiedMain" />
+        <item itemvalue="애플리케이션.BDancerMain" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680066187882</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="수정">
+      <created>1680135135035</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1680135135035</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,7 +303,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
     <MESSAGE value="주소 바꿈" />
     <MESSAGE value="김철수 ctrl + alt + v" />
     <MESSAGE value="스코프" />
@@ -324,7 +327,8 @@
     <MESSAGE value="메서드 기본" />
     <MESSAGE value="메서드 퀴즈 (미완)" />
     <MESSAGE value="커밋" />
-    <option name="LAST_COMMIT_MESSAGE" value="커밋" />
+    <MESSAGE value="수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
