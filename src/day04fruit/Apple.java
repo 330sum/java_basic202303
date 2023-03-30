@@ -1,4 +1,4 @@
-package fruit;
+package day04fruit;
 
 public class Apple {
     public Apple() {

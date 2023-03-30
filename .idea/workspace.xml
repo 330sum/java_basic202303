@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="수정">
+    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="패키지공부관련">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day03/HMethodQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/HMethodQuiz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +287,49 @@
       <option name="project" value="LOCAL" />
       <updated>1680135135035</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="수정">
+      <created>1680152132185</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1680152132185</updated>
+    </task>
+    <task id="LOCAL-00022" summary="필드와 로컬변수, 매개변수">
+      <created>1680152213914</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1680152213914</updated>
+    </task>
+    <task id="LOCAL-00023" summary="스트링 비교할때는?">
+      <created>1680152236876</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1680152236876</updated>
+    </task>
+    <task id="LOCAL-00024" summary="패키지">
+      <created>1680152261505</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1680152261505</updated>
+    </task>
+    <task id="LOCAL-00025" summary="스트링 관련 (아직 미완)">
+      <created>1680152282066</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1680152282066</updated>
+    </task>
+    <task id="LOCAL-00026" summary="패키지공부관련">
+      <created>1680152342137</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1680152342137</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,13 +344,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="주소 바꿈" />
-    <MESSAGE value="김철수 ctrl + alt + v" />
-    <MESSAGE value="스코프" />
-    <MESSAGE value="데이터 타입" />
-    <MESSAGE value="데이터 타입 수정" />
-    <MESSAGE value="캐스팅" />
-    <MESSAGE value="표준 입출력" />
     <MESSAGE value="switch" />
     <MESSAGE value="array basic" />
     <MESSAGE value="배열 복사" />
@@ -328,7 +362,14 @@
     <MESSAGE value="메서드 퀴즈 (미완)" />
     <MESSAGE value="커밋" />
     <MESSAGE value="수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="수정" />
+    <MESSAGE value="객체지향 기초, 생성자" />
+    <MESSAGE value="필드와 로컬변수, 매개변수" />
+    <MESSAGE value="스트링 비교할때는?" />
+    <MESSAGE value="패키지" />
+    <MESSAGE value="퀴즈" />
+    <MESSAGE value="스트링 관련 (아직 미완)" />
+    <MESSAGE value="패키지공부관련" />
+    <option name="LAST_COMMIT_MESSAGE" value="패키지공부관련" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
