@@ -43,9 +43,11 @@ public class ADancer {
 
     // 기능 (메서드) : static을 붙이지 말기!
     // 춤추는 기능
-    void dance() {
-        System.out.println(genre + "춤을 열정적으로 춥니다.");
+    void dance(ADancer this) {
+        System.out.println(this.genre + "춤을 열정적으로 춥니다.");
     }
+// 원래 this 써줘야하는데, 당연한거니까 생략가능
+
 
     //스트레칭을 하는 기능
     void stretch() {
