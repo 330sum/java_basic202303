@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="패키지공부관련">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="수정">
+      <change beforePath="$PROJECT_DIR$/src/day04/array/StringList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/array/StringList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680152342137</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="수정">
+      <created>1680220747546</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1680220747546</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -361,7 +368,6 @@
     <MESSAGE value="메서드 기본" />
     <MESSAGE value="메서드 퀴즈 (미완)" />
     <MESSAGE value="커밋" />
-    <MESSAGE value="수정" />
     <MESSAGE value="객체지향 기초, 생성자" />
     <MESSAGE value="필드와 로컬변수, 매개변수" />
     <MESSAGE value="스트링 비교할때는?" />
@@ -369,7 +375,8 @@
     <MESSAGE value="퀴즈" />
     <MESSAGE value="스트링 관련 (아직 미완)" />
     <MESSAGE value="패키지공부관련" />
-    <option name="LAST_COMMIT_MESSAGE" value="패키지공부관련" />
+    <MESSAGE value="수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
