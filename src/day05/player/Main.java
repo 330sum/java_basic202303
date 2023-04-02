@@ -10,9 +10,9 @@ public class Main {
         Player noname = new Player();
 
         gondue.attack(parking);
-        System.out.println("parking의 주소 : "+parking);
-        System.out.println("gondue의 주소 : "+gondue);
-//        System.out.println("주차왕파킹 남은 체력 : "+parking.hp);
+//        System.out.println("parking의 주소 : "+parking);
+//        System.out.println("gondue의 주소 : "+gondue);
+        System.out.println("주차왕파킹 남은 체력 : "+parking.hp);
 
     }
 }

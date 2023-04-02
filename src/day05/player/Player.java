@@ -33,7 +33,6 @@ public class Player {
     // 필드라는 것을 확인시켜주기 위해서 this를 붙이기!
 
 
-
 //  alt + insert -> ctrl + a
     public Player(String nickName, int level, int hp) {
         System.out.println("3번 생성자 호출");
