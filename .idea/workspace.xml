@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="배열리스트 메이 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/ADancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/ADancer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/player/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/player/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +51,20 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/sumin/Dev/java_basic202303",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="day05.member" />
@@ -66,7 +74,7 @@
       <recent name="day02" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.day05.member.Main">
+  <component name="RunManager" selected="Application.day05.player.Main">
     <configuration name="HPackagePractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day04.HPackagePractice" />
       <module name="java_basic" />
@@ -134,11 +142,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.day05.member.Main" />
-        <item itemvalue="애플리케이션.Test" />
-        <item itemvalue="애플리케이션.day05.player.Main" />
-        <item itemvalue="애플리케이션.Main" />
-        <item itemvalue="애플리케이션.HPackagePractice" />
+        <item itemvalue="Application.day05.player.Main" />
+        <item itemvalue="Application.day05.member.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -150,6 +155,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679878910960</updated>
+      <workItem from="1680315026705" duration="954000" />
+      <workItem from="1680317394427" duration="171000" />
+      <workItem from="1680395236093" duration="3477000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1679881087585</created>
@@ -363,6 +371,9 @@
     </task>
     <option name="localTasksCounter" value="31" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
