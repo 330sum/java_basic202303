@@ -1,6 +1,8 @@
 package day05.member;
 
 // 이 클래스의 존재 이유(역할) : 1명의 회원정보를 묶어주는 역할
+// Java Bean (value object)
+
 // 여러명의 회원정보를 담아놓는 저장소역할을 하는 클래스가 필요함! -> MemberRepository
 public class Member {
 

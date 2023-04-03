@@ -4,6 +4,7 @@ package day05.member;
 public class MemberRepository {
 
     // 필드
+    public static final int NOT_FOUND = -1;
     Member[] memberList;
 
     public MemberRepository() {
@@ -71,6 +72,7 @@ public class MemberRepository {
 
     /**
      * 이메일을 통해 특정 회원 객체를 찾아서 반환하는 기능
+     *
      * @return : 찾은 회원의 객체정보, 못찾으면 null 반환
      * @param1 email : 찾고싶은 회원의 이메일
      */
@@ -82,6 +84,42 @@ public class MemberRepository {
             }
         }
         return null;
+    }
+
+
+    /**
+     * 이메일을 통해 저장된 회원의 인덱스값을 알아내는 메서드
+     *
+     * @param email - 탐색 대상의 이메일
+     * @return : 찾아낸 인덱스, 못찾으면 -1 리턴 (-1보다 상수로 표현하는 것이 좋음 psf)
+     */
+    int findIndexByEmail(String email) {
+        for (int i = 0; i < memberList.length; i++) {
+            if (memberList[i].email.equals(email))
+                return i;
+        }
+        return NOT_FOUND;
+    }
+
+
+    /**
+     * 비밀번호를 수정하는 기능
+     *
+     * @param email       : 수정 대상의 이메일
+     * @param newPassword : 변경할 새로운 비밀번호
+     */
+    boolean changePassword(String email, String newPassword) {
+
+        // 인덱스 탐색
+        int index = findIndexByEmail(email);
+
+        // 수정진행
+        if (index == NOT_FOUND) return false;
+
+        memberList[index].password = newPassword;
+        return true;
+
+
     }
 
 

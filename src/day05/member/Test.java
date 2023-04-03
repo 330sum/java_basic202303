@@ -11,7 +11,7 @@ public class Test {
 //        System.out.println(m2.inform());
 
 
-    MemberRepository mr = new MemberRepository();
+        MemberRepository mr = new MemberRepository();
 //        mr.showMembers();
 
 
@@ -20,16 +20,23 @@ public class Test {
         mr.addMember(thief);
 
         mr.showMembers();
-        
+
         boolean flag = mr.isDuplicateEmail("ddd@fff.com");
         System.out.println("flag = " + flag); // 중복이면 true, 다르면 false (가입가능)
 
+        // 수정테스트
+        String targetEmail = "ccc@vvv.com";
+        boolean updateFlag = mr.changePassword(targetEmail, "9999");
 
+        if (updateFlag) {
+            Member updateMember = mr.findByEmail(targetEmail);
+            System.out.println("updateMember = " + updateMember.password);
+        } else {
+            System.out.println("이메일이 잘못됨!");
+        }
 
 
     }
-
-
 
 
 }

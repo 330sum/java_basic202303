@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="연습">
+    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="이모티콘 방법 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.day05.member.Main" />
+        <item itemvalue="애플리케이션.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -372,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680399497388</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="이모티콘 방법 추가">
+      <created>1680492564073</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1680492564077</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +406,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="배열 push 함수" />
     <MESSAGE value="배열 pop" />
     <MESSAGE value="배열 pop 함수" />
     <MESSAGE value="배열 퀴즈" />
@@ -415,7 +430,8 @@
     <MESSAGE value="수정..?" />
     <MESSAGE value="배열리스트 메이 추가" />
     <MESSAGE value="연습" />
-    <option name="LAST_COMMIT_MESSAGE" value="연습" />
+    <MESSAGE value="이모티콘 방법 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="이모티콘 방법 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
