@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="비밀번호 수정관련 코드 작성">
+    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="접근제한자 공부">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/member/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +72,20 @@
       <recent name="day02" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.day05.member.Main">
+  <component name="RunManager" selected="애플리케이션.BMain">
+    <configuration name="BMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day06.encap.BMain" />
+      <module name="java_basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day06.encap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HPackagePractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day04.HPackagePractice" />
       <module name="java_basic" />
@@ -128,21 +138,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="day05.player.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day05.player.Main" />
-      <module name="java_basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day05.player.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.BMain" />
         <item itemvalue="애플리케이션.day05.member.Main" />
         <item itemvalue="애플리케이션.Test" />
       </list>
@@ -394,7 +392,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680500611599</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="회원정보 삭제하기 코드 작성">
+      <created>1680503670455</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1680503670455</updated>
+    </task>
+    <task id="LOCAL-00035" summary="접근제한자 공부">
+      <created>1680509561246</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1680509561246</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,8 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="배열 pop 함수" />
-    <MESSAGE value="배열 퀴즈" />
     <MESSAGE value="커밋!" />
     <MESSAGE value="배열검색" />
     <MESSAGE value="배열검색 퀴즈" />
@@ -437,7 +447,9 @@
     <MESSAGE value="연습" />
     <MESSAGE value="이모티콘 방법 추가" />
     <MESSAGE value="비밀번호 수정관련 코드 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="비밀번호 수정관련 코드 작성" />
+    <MESSAGE value="회원정보 삭제하기 코드 작성" />
+    <MESSAGE value="접근제한자 공부" />
+    <option name="LAST_COMMIT_MESSAGE" value="접근제한자 공부" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
