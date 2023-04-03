@@ -117,9 +117,9 @@ public class MemberRepository {
     }
 
 
+// 시그니처와 파라미터가 다 있는경우, /** + Enter 치면 @param 작성할 수 있도록 됨
     /**
      * 비밀번호를 수정하는 기능
-     *
      * @param email       : 수정 대상의 이메일
      * @param newPassword : 변경할 새로운 비밀번호
      */
@@ -137,7 +137,8 @@ public class MemberRepository {
     }
 
     /**
-     *
+     * 회원 삭제하는 기능
+     * @param : 삭제할 대상의 이메일
      */
     void removeMember(String email) {
         // 인덱스 찾기
