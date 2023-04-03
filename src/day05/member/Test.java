@@ -36,6 +36,11 @@ public class Test {
         }
 
 
+        mr.showMembers();
+        mr.removeMember("ddd@fff.com");
+        mr.showMembers();
+
+
     }
 
 

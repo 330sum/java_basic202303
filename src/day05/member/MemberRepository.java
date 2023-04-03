@@ -5,13 +5,22 @@ public class MemberRepository {
 
     // 필드
     public static final int NOT_FOUND = -1;
+
+    // 가입된 회원 배열
     Member[] memberList;
 
+    // 삭제된 회원 배열 (휴지통 같은곳)
+    Member[] removeMembers;
+
+    // 숙제
+    // 10명이상 되면 더 이상 가입 못하도록 1번메뉴 안보이게 하기
+
+
     public MemberRepository() {
-        this.memberList = new Member[3]; // 3명 선가입시켜놓고 테스트 해보기
-        memberList[0] = new Member(1, "abc@def.com", "1234", "덮밥왕", Gender.MALE, 28);
-        memberList[1] = new Member(2, "ddd@fff.com", "5678", "짜장왕", Gender.MALE, 29);
-        memberList[2] = new Member(3, "ccc@vvv.com", "1254", "카레왕", Gender.MALE, 27);
+        this.memberList = new Member[0]; // 3명 선가입시켜놓고 테스트 해보기
+//        memberList[0] = new Member(1, "abc@def.com", "1234", "덮밥왕", Gender.MALE, 28);
+//        memberList[1] = new Member(2, "ddd@fff.com", "5678", "짜장왕", Gender.MALE, 29);
+//        memberList[2] = new Member(3, "ccc@vvv.com", "1254", "카레왕", Gender.MALE, 27);
     }
 
     // 메서드 (기능)
@@ -66,7 +75,13 @@ public class MemberRepository {
 
     // 마지막 회원의 번호를 알려주는 기능
     int getLastMemberId() {
-        return memberList[memberList.length - 1].memberId;
+        if (!isEmpty()) {
+            return memberList[memberList.length - 1].memberId;
+        } else {
+            return 0;
+        }
+//        return !isEmpty()? memberList[memberList.length - 1].memberId: 0;
+
     }
 
 
@@ -119,7 +134,34 @@ public class MemberRepository {
         memberList[index].password = newPassword;
         return true;
 
+    }
 
+    /**
+     *
+     */
+    void removeMember(String email) {
+        // 인덱스 찾기
+        int delIndex = findIndexByEmail(email);
+
+
+        // 배열 앞으로 한칸씩 땡기기
+        for (int i = delIndex; i < memberList.length - 1; i++) {
+            memberList[i] = memberList[i + 1];
+        }
+
+        // 배열 마지막 칸 없애기(pop)
+        Member[] temp = new Member[memberList.length - 1];
+        for (int i = 0; i < temp.length; i++) {
+            temp[i] = memberList[i];
+        }
+        memberList = temp;
+//        temp = null;
+    }
+
+
+    // 멤버가 비었는지 확인
+    boolean isEmpty() {
+        return memberList.length == 0;
     }
 
 
