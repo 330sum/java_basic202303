@@ -1,4 +1,4 @@
-package day07.inheri;
+package day07.Ainheri;
 // 슈퍼 클래스 (부모 클래스): 객체의 공통 기능과 속성을 설계
 public class DPlayer extends Object { // Object는 모두의 조상
 

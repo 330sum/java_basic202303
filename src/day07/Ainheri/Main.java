@@ -1,4 +1,4 @@
-package day07.inheri;
+package day07.Ainheri;
 
 public class Main {
 

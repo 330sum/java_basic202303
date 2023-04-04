@@ -1,4 +1,4 @@
-package day07.quiz1;
+package day07.Cquiz1;
 
 public class Child extends Parent{
 

@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="폴더 제목 변경">
+    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="퀴즈3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/inheri/AWarrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Ainheri/AWarrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/inheri/BMage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Ainheri/BMage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/inheri/CHunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Ainheri/CHunter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/inheri/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Ainheri/DPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/inheri/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Ainheri/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/quiz1/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Cquiz1/Child.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/quiz1/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Cquiz1/Parent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/quiz2/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Dquiz2/Child.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/quiz2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Dquiz2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/quiz2/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Dquiz2/Parent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/quiz3/GisaFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Equiz3/GisaFirst.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +71,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "editor.preferences.import",
     "vue.rearranger.settings.migration": "true"
   }
@@ -72,7 +85,7 @@
       <recent name="day02" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.GisaFirst">
+  <component name="RunManager" selected="애플리케이션.Main">
     <configuration name="BMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day06.encap.BMain" />
       <module name="java_basic" />
@@ -86,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GisaFirst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day07.quiz3.GisaFirst" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day07.lotto2.Main" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day07.quiz3.*" />
+          <option name="PATTERN" value="day07.lotto2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,38 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="day05.member.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day05.member.Main" />
+    <configuration name="day07.Ainheri.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day07.Ainheri.Main" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day05.member.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="day07.inheri.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day07.inheri.Main" />
-      <module name="java_basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day07.inheri.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="day07.quiz2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day07.quiz2.Main" />
-      <module name="java_basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day07.quiz2.*" />
+          <option name="PATTERN" value="day07.Ainheri.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,11 +127,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.GisaFirst" />
-        <item itemvalue="애플리케이션.day07.quiz2.Main" />
-        <item itemvalue="애플리케이션.day07.inheri.Main" />
+        <item itemvalue="애플리케이션.Main" />
         <item itemvalue="애플리케이션.BMain" />
-        <item itemvalue="애플리케이션.day05.member.Main" />
+        <item itemvalue="애플리케이션.day07.Ainheri.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -422,7 +407,35 @@
       <option name="project" value="LOCAL" />
       <updated>1680510459881</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="상속 공부">
+      <created>1680579837997</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1680579837997</updated>
+    </task>
+    <task id="LOCAL-00039" summary="퀴즈2">
+      <created>1680579863137</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1680579863137</updated>
+    </task>
+    <task id="LOCAL-00040" summary="퀴즈3">
+      <created>1680579877362</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1680579877362</updated>
+    </task>
+    <task id="LOCAL-00041" summary="퀴즈3">
+      <created>1680579890070</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1680579890070</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,10 +453,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="배열검색" />
-    <MESSAGE value="배열검색 퀴즈" />
-    <MESSAGE value="배열 중간 삭제" />
-    <MESSAGE value="배열 중간 삽입" />
     <MESSAGE value="다중배열" />
     <MESSAGE value="메서드 기본" />
     <MESSAGE value="메서드 퀴즈 (미완)" />
@@ -465,7 +474,11 @@
     <MESSAGE value="접근제한자 공부" />
     <MESSAGE value="캡슐화 공부" />
     <MESSAGE value="수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="수정" />
+    <MESSAGE value="상속 공부" />
+    <MESSAGE value="퀴즈1" />
+    <MESSAGE value="퀴즈2" />
+    <MESSAGE value="퀴즈3" />
+    <option name="LAST_COMMIT_MESSAGE" value="퀴즈3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

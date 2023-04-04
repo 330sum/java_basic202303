@@ -1,4 +1,4 @@
-package day07.quiz3;
+package day07.Equiz3;
 
 class Parent1 {
     int compute(int num) {

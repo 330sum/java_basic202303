@@ -1,4 +1,4 @@
-package day07.quiz2;
+package day07.Dquiz2;
 
 public class Main {
 

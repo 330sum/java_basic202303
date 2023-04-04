@@ -1,4 +1,4 @@
-package day07.inheri;
+package day07.Ainheri;
 
 // 서브 클래스 (자식 클래스)
 public class AWarrior extends DPlayer { // is a 관계
