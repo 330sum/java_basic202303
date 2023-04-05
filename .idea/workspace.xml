@@ -402,7 +402,42 @@
       <option name="project" value="LOCAL" />
       <updated>1680579890070</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="다형성 (예제 - 자동차)">
+      <created>1680680966629</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1680680966629</updated>
+    </task>
+    <task id="LOCAL-00043" summary="다형성 베이직, 예제">
+      <created>1680680999004</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1680680999004</updated>
+    </task>
+    <task id="LOCAL-00044" summary="수정">
+      <created>1680681050921</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1680681050921</updated>
+    </task>
+    <task id="LOCAL-00045" summary="썬더볼트롤 체력 깎기">
+      <created>1680681081518</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1680681081518</updated>
+    </task>
+    <task id="LOCAL-00046" summary="book CRUD">
+      <created>1680681107583</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1680681107583</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
