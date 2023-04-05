@@ -10,7 +10,7 @@ public class DPlayer extends Object { // Object는 모두의 조상
     // 부모의 생성자
     public DPlayer(String nickName) {
         super();
-        System.out.println("Player의 생성자 호출!");
+//        System.out.println("Player의 생성자 호출!");
         this.nickName = nickName;
         this.level = 1;
         this.hp = 50;
