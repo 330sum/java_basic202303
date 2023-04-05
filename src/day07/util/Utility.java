@@ -16,7 +16,7 @@ public class Utility {
     }
 
     public static String input(String message) {
-        System.out.println(message);
+        System.out.print(message);
         return sc.nextLine();
         // 7번라인에 스캐너도 static으로 붙이기 -> 왜? static메서드 안에서는 static필드만 참조가능
         // 그리고 그 앞에 private 붙이기 -> 왜? 외부에서 접근 못하도록 하게 만들기

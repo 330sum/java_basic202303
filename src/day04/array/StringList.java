@@ -9,12 +9,12 @@ public class StringList {
     String[] sArr;
 
     // 생성자
-    StringList() {
+    public StringList() {
         sArr = new String[0];
 //        System.out.println("생성자 끌려옴");
     }
 
-    StringList(String... initData) {
+    public StringList(String... initData) {
         sArr = new String[initData.length];
 //        for (String datum : initData) {
 //            push(datum);
@@ -26,14 +26,14 @@ public class StringList {
 
     // 메서드
     // 배열에 저장된 데이터 수를 알려주는 기능
-    int size() {
+    public int size() {
         return sArr.length;
     }
 
 
 
     // 배열에 맨 끝에 데이터를 추가하는 기능 (push)
-    void push(String newData) {
+    public void push(String newData) {
         String[] temp = new String[sArr.length + 1];
         for (int i = 0; i < sArr.length; i++) {
             temp[i] = sArr[i];
@@ -46,7 +46,7 @@ public class StringList {
 
 
     // 배열 맨 끝 데이터 삭제하는 기능 (pop)
-    String pop() {
+    public String pop() {
         String deleteTarget = sArr[sArr.length - 1];
         String[] temp = new String[sArr.length - 1];
         for (int i = 0; i < temp.length; i++) {
@@ -66,14 +66,14 @@ public class StringList {
 
 
     // 배열이 텅텅비었는지 확인 (isEmpty)
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return sArr.length == 0;
     }
 
 
 
     // 배열 데이터 전체삭제 (clear)
-    void clear() {
+    public void clear() {
         sArr = new String[0];
     }
 
@@ -81,7 +81,7 @@ public class StringList {
 
 
     // 인덱스 탐색 (indexOf)
-    int indexOf(String target) {
+    public int indexOf(String target) {
         for (int i = 0; i < sArr.length; i++) {
             if (target.equals(sArr[i])) {
                 return i;
@@ -91,12 +91,12 @@ public class StringList {
     }
 
     // 자료 유무 확인 (includes)
-    boolean includes(String target) {
+    public boolean includes(String target) {
         return indexOf(target) != -1;
     }
 
     // 중간 삭제 (remove) : 인덱스로 삭제
-    String remove(int index) {
+    public String remove(int index) {
         if (index < 0 || index > sArr.length - 1) return null;
 
         String targetData = sArr[index];
@@ -107,12 +107,12 @@ public class StringList {
         return targetData;
     }
     // 중간 삭제 (remove) : 값으로 삭제
-    String remove(String target) {
+    public String remove(String target) {
         return remove(indexOf(target));
     }
 
     // 중간 삽입 (insert)
-    void insert(int index, String newData) {
+    public void insert(int index, String newData) {
 
         if (index < 0 || index > sArr.length - 1) return;
         if (index == sArr.length - 1) push(newData);
@@ -126,6 +126,11 @@ public class StringList {
         }
         temp[index] = newData;
         sArr = temp;
+    }
+
+
+    public String[] getsArr() {
+        return sArr;
     }
 
 
