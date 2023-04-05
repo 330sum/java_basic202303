@@ -83,6 +83,46 @@ public class LibraryRepository {
     }
 
 
+
+
+    // 도서 대여 처리
+    public RentStatus rentBook(int rentNum) {
+        // 대여를 원하는 책 추출
+        Book wishBook = booklist[rentNum - 1];
+
+        // 책의 분류에 따라 다른 처리 (쿠폰, 연령)
+        if (wishBook instanceof CookBook) {
+            // 쿠폰 유무 확인
+            // 현재 wishBook이 (91번라인) Book 타입이기 때문에
+            // CookBook의 고유한 쿠폰속성을 위해서 다운캐스팅 필요함
+            CookBook cookBook = (CookBook) wishBook;
+            if(cookBook.isCoupon()){
+                bookUser.setCouponCount(bookUser.getCouponCount()+1);
+                return RentStatus.RENT_SUCCESS_WITH_COUPON; // alt + Enter로 import static 처리 가능
+            }else {
+                return RentStatus.RENT_SUCCESS;
+            }
+
+
+        } else if (wishBook instanceof CartoonBook) {
+            // 연령 제한 확인
+            // 다운캐스팅
+            CartoonBook cartoonBook = (CartoonBook) wishBook;
+            if(bookUser.getAge() >= cartoonBook.getAccessAge()) {
+                // 빌릴 수 있는 경우
+                return RentStatus.RENT_SUCCESS;
+
+            }else {
+                return RentStatus.RENT_FAIL;
+            }
+        }
+            return  RentStatus.RENT_FAIL;
+    }
+
+
+
+
+
     // 저자를 받으면 저자에 관련된 책 디테일 정보들을 반환
     public String[] searchAuthor(String author) {
 
@@ -91,7 +131,7 @@ public class LibraryRepository {
         // 저자들 뒤지기
         for (Book book : booklist) {
             String authorFullName = book.getAuthor();// 책 저자
-            if(authorFullName.contains(author)){
+            if (authorFullName.contains(author)) {
                 String bookAuthor = book.authorInfo();
                 list.push(bookAuthor);
             }
@@ -100,9 +140,6 @@ public class LibraryRepository {
 
         return list.getsArr();
     }
-
-
-
 
 
 }

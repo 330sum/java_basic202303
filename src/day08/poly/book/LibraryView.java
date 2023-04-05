@@ -119,6 +119,24 @@ public class LibraryView {
 
                 break;
             case "4":
+                // 대여가능한 책의 목록을 번호와 함께 출력
+                String[] rentalList = repository.getBookInfoList();
+                System.out.println("\n ========== 대여가능한 도서 정보========== ");
+                int bookNum = 1;
+                for (String info : rentalList) {
+                    System.out.printf("%d. %s\n", bookNum++, info);
+                }
+                String rentNum = input("- 대여할 도서 번호 입력: ");
+                RentStatus rentStatus = repository.rentBook(Integer.parseInt(rentNum));
+                if (rentStatus == RentStatus.RENT_SUCCESS_WITH_COUPON) {
+                    System.out.println("# 성공적으로 요리책이 쿠폰발급과 함께 대여되었습니다.");
+                } else if (rentStatus == RentStatus.RENT_SUCCESS) {
+                    System.out.println("# 도서가 성공적적으로 대여 되었습니다");
+                } else {
+                    System.out.println("#도서 대여에 실패하였습니다.");
+                }
+
+
                 break;
             case "5":
                 // 사용자에게 저자이름 입력받기
