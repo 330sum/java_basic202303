@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="뭐지 업데이트 안된건가?">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day08/poly/book/LibraryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/poly/book/LibraryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day08/poly/book/LibraryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/poly/book/LibraryView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day08/poly/book/RentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/poly/book/RentStatus.java" afterDir="false" />
-    </list>
+    <list default="true" id="e800a88e-58a4-4b93-aa59-c26edede1d05" name="Changes" comment="다형성!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -448,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680682415208</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="다형성!">
+      <created>1680684350144</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1680684350144</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +468,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="메서드 기본" />
     <MESSAGE value="메서드 퀴즈 (미완)" />
     <MESSAGE value="커밋" />
     <MESSAGE value="객체지향 기초, 생성자" />
@@ -491,7 +492,8 @@
     <MESSAGE value="퀴즈2" />
     <MESSAGE value="퀴즈3" />
     <MESSAGE value="뭐지 업데이트 안된건가?" />
-    <option name="LAST_COMMIT_MESSAGE" value="뭐지 업데이트 안된건가?" />
+    <MESSAGE value="다형성!" />
+    <option name="LAST_COMMIT_MESSAGE" value="다형성!" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
