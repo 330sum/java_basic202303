@@ -10,9 +10,10 @@ public class Main {
                 new Dog("최강", "불독", 4),
                 new Cat("꾸꾸까까", "러시안블루", 2),
                 new GoldFish("금쪽이", "금붕어", 10)
-                // 빨간 줄 이유? 생성자가 없어서
+                // 빨간 줄 이유? 생성자가 없어서~~
                 // Pet에서 private 필드들은 접근 못함. 상속해도 private는 상속안됨
-                // 그래서 Pet에서 생성자 만들고 초기화하면 외부Cat Dog에서 생성자 만들어서 super로 접근 가능
+                // 그래서 Pet에서 생성자 만들고 초기화(this)한 후에
+                // Cat과 Dog에서 생성자 만들어서 Pet클래스에 super로 접근!
 
         };
 

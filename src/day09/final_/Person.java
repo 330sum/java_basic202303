@@ -20,7 +20,8 @@ class SmartBagPack extends BagPack {
 
 
 
-// final은 최종본이라는 의미로 더이상 확장불가
+// 아래 백팩클래스에 final붙이면 최종본이라는 의미로 더이상 확장하지마! (상속불가)
+// 그래서 위에 스마트백팩에 백팩 상속하면 빨간줄나옴
  class BagPack {
     // 속성(필드)
     int size; // 가방크기 (1~10)
@@ -49,7 +50,7 @@ public class Person {
     // 아래 생성자 보면 초기화 된 것!
 
 //    static final String nation= "대한민국"; // 국적
-    // 필드에서 초기화하면 안됨~
+    // 필드는 직접 초기화하지 않는다~
     static final String nation;// 국적
     final BagPack bagPack; //가방
 
@@ -60,25 +61,21 @@ public class Person {
 
 
 
-    // 상수는 불변성, 유일성을 모두 만족해야 함
-    // final로 불변성을 챙길 수 있지만, 유일성은 못 챙김
-    // 주민번호 같은 경우, 한 사람에게 지정되면 주민번호가 불변성을 띄지만, 사람마다 다 다름 (유일성 없음)
-
-    // 불변성(final)과 유일성(static)을 모두 만족시키려면 static final 사용하면 됨
 
 
 
 
-
-    public Person(final String name, final String ssn, final String nation, BagPack bagPack) {
+    public Person(final String name, final String ssn, BagPack bagPack) {
 
 //        this.name = "박영희";
         // 이런식으로 내부에서 값을 바꾸는 걸 방지하도록 파라미터에 final 붙임
         // 파이널 걸려 있어서 원래 함수에서 주는 값대로만 사용하게 하도록 (안전함)
+        // 지역변수(파라미터)를 안에서 조정하지 못하도록 final을 붙임
+        // 이론상 붙이는게 좋은데, 귀찮아서 잘 안붙임
 
         this.name = name;
         this.ssn = ssn;
-//        this.nation = nation;
+//        this.nation = nation; // 54번라인에 static final로 상수가 되었으니까, 생성자에 초기화 시키면 안됨.
         this.bagPack = bagPack;
     }
 }

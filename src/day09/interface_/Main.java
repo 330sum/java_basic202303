@@ -11,10 +11,10 @@ public class Main {
         Duck duck = new Duck();
         duck.eat();
 
-        // 인터페이스는 상속에서 사용하던 다형성을 구현할 수 있음
-        // 부모클래스로 묶을 수 있음
+        // 인터페이스는 다형성을 구현하는 역할
+        // 부모타입으로 묶을 수 있음
         Pet[] pets = {
-          bullDog, duck, new Rabbit()
+                bullDog, duck, new Rabbit()
         };
 
         //
