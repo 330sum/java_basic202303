@@ -1,4 +1,4 @@
-package day09.musicManagement_yg;
+package day09.musicManagement;
 
 import java.util.List;
 import java.util.Scanner;
