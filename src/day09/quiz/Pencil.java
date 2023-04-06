@@ -1,6 +1,6 @@
-//package day09.quiz;
-//
-//public interface Pencil {
-//
-//    boolean bluetoothPen();
-//}
+package day09.quiz;
+
+public interface Pencil {
+
+    boolean bluetoothPen();
+}
