@@ -6,7 +6,8 @@ import static day07.util.Utility.makeLine;
 public class ArtistView {
 
     private final static ArtistRepository ar;
-    // 데이터베이스가 교체되면 안되니까 final 걸어서 교체 못하도록 막아놔야함
+    // 하나만 있으면 되니까 static
+    // 데이터베이스가 교체되면 안되니까 final 걸어서 교체되지 못하도록 막아놔야함
 
     static {
         ar = new ArtistRepository();
@@ -24,7 +25,7 @@ public class ArtistView {
             makeLine();
 
 
-            String menuNum = input(">>");
+            String menuNum = input(">> ");
 
 
             switch (menuNum) {
@@ -35,11 +36,11 @@ public class ArtistView {
                     searchProcess();
                     break;
                 case "3":
-                    System.out.println(" # 프로그램을 종료하시겠습니까? [y/n] ");
+                    System.out.println("# 프로그램을 종료합니다.");
                     System.exit(0);
                     break;
                 default:
-                    System.out.println("\n 메뉴번호를 다시 입력하세요");
+                    System.out.println("# 메뉴를 잘못 입력했습니다!");
                     break;
 
             }
@@ -82,7 +83,6 @@ public class ArtistView {
         if (ar.isRegistered(artistName)) {
             // 등록된 경우
             System.out.printf("\n# %s님의 노래목록 \n", artistName);
-
             makeLine();
 
             String[] songList = ar.getSongList(artistName);
@@ -90,6 +90,7 @@ public class ArtistView {
                 System.out.printf("* %d. %s\n", i+1, songList[i]);
             }
         } else {
+            // 등록되지 않은 경우
             System.out.println("\n# 해당 가수는 등록되지 않았습니다.");
         }
     }

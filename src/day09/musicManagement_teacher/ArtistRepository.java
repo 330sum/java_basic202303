@@ -12,7 +12,7 @@ public class ArtistRepository {
 
     // 신규 가수를 첫 노래와 함께 배열에 추가하는 기능
     public void addNewArtist(String artistName, String songName) {
-//        // 1. 가수 객체 생성
+//        // 1. 가수 객체 생성 (생성자 1번 이용 -> 깡통임)
 //        Artist artist = new Artist();
 //        // 2. 생성된 가수 객체에 전달받은 이름 셋팅
 //        artist.setName(artistName);
@@ -24,7 +24,7 @@ public class ArtistRepository {
 //        // 추가하기
 //        artist.getSongList().push(songName);
 
-
+        // 위의 것 한줄로 (1~4) 생성자 2번째꺼 이용
         Artist artist = new Artist(artistName, new StringList(songName));
 
         // 5. 가수배열에 해당 가수 객체 추가
@@ -57,9 +57,9 @@ public class ArtistRepository {
     // 기존 가수 객체에 노래를 추가하는 기능
     public boolean addNewSong(String artistName, String songName) {
         // 1. 기존 가수정보를 불러온다.
-        Artist artistByName = findArtistByName(artistName);
-        // 2. 그 가수 객체에서 노래목록을 빼온다
-        StringList songList = artistByName.getSongList();
+        Artist foundArtist = findArtistByName(artistName);
+        // 2. 그 가수 객체에서 노래목록을 빼온다(get)
+        StringList songList = foundArtist.getSongList();
         // 3. 그 노래목록에 새노래를 추가한다.
         // 없는경우에만 새로 추가해
         if(!songList.includes(songName)) {
