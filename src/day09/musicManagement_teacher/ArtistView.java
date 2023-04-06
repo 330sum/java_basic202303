@@ -1,4 +1,4 @@
-package day09.quiz3;
+package day09.musicManagement_teacher;
 
 import static day07.util.Utility.input;
 import static day07.util.Utility.makeLine;

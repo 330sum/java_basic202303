@@ -1,4 +1,4 @@
-package day09.quiz2;
+package day09.musicManagement_sm;
 
 public class SingerRepository {
     Singer[] singerList;

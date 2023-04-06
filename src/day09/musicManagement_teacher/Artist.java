@@ -1,4 +1,4 @@
-package day09.quiz3;
+package day09.musicManagement_teacher;
 
 import day04.array.StringList;
 
