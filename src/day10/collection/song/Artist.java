@@ -1,16 +1,18 @@
-package day09.songSystem_teacher;
+package day10.collection.song;
 
 import day04.array.StringList;
 
+import java.util.Set;
+
 public class Artist {
     private String name;
-    public StringList songList;
+    public Set<String> songList;
 
     public Artist() {
 
     }
 
-    public Artist(String name, StringList songList) {
+    public Artist(String name, Set<String> songList) {
         this.name = name;
         this.songList = songList;
     }
@@ -24,11 +26,11 @@ public class Artist {
         this.name = name;
     }
 
-    public StringList getSongList() {
+    public Set<String> getSongList() {
         return songList;
     }
 
-    public void setSongList(StringList songList) {
+    public void setSongList(Set<String> songList) {
         this.songList = songList;
     }
 

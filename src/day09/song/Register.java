@@ -1,4 +1,4 @@
-package day09.songSystem;
+package day09.song;
 
 public enum Register {
     NEW_REGISTER,

@@ -1,13 +1,21 @@
-package day09.songSystem_teacher;
+package day10.collection.song;
 
 import day04.array.StringList;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 public class ArtistRepository {
 
-    static Artist[] artistList; // 가수 배열
+    // key: 가수의 이름, value: 가수 객체
+    public static Map<String, Artist> artistList; // 가수 배열
+    // 가수String(키)으로 아티스트(벨류)를 찾자
+    // 키는 중복되면 안됨!!!! -> 그래서 키랑 벨류 정보를 적어두는 것이 좋음
 
     static {
-        artistList = new Artist[0];
+        artistList = new HashMap<>();
     }
 
     // 신규 가수를 첫 노래와 함께 배열에 추가하는 기능
@@ -25,32 +33,23 @@ public class ArtistRepository {
 //        artist.getSongList().push(songName);
 
         // 위의 것 한줄로 (1~4) 생성자 2번째꺼 이용
-        Artist artist = new Artist(artistName, new StringList(songName));
+        Artist artist = new Artist(artistName, new HashSet<>());
+        artist.getSongList().add(songName);
 
-        // 5. 가수배열에 해당 가수 객체 추가
-        Artist[] temp = new Artist[artistList.length + 1];
-        for (int i = 0; i < artistList.length; i++) {
-            temp[i] = artistList[i];
-        }
-        temp[temp.length - 1] = artist;
-        artistList = temp;
+        // 5. 가수맵에 해당 가수 객체 추가
+        artistList.put(artist.getName(), artist);
 
     }
 
     // 가수명을 받아서 해당 가수가 등록된 가수인지 확인하는 기능
     public boolean isRegistered(String artistName) {
-        return findArtistByName(artistName) != null;
+        return artistList.containsKey(artistName);
     }
 
 
     // 가수명을 통해 가수 객체 정보를 반환하는 기능
     public Artist findArtistByName(String artistName) {
-        for (Artist artist : artistList) {
-            if (artistName.equals(artist.getName())) {
-                return artist;
-            }
-        }
-        return null;
+        return artistList.get(artistName);
     }
 
 
@@ -59,33 +58,34 @@ public class ArtistRepository {
         // 1. 기존 가수정보를 불러온다.
         Artist foundArtist = findArtistByName(artistName);
         // 2. 그 가수 객체에서 노래목록을 빼온다(get)
-        StringList songList = foundArtist.getSongList();
-        // 3. 그 노래목록에 새노래를 추가한다.
-        // 없는경우에만 새로 추가해
-        if(!songList.includes(songName)) {
-            songList.push(songName);
-            // 추가되고 안되고 2개니까 boolean으로 변경
-            // true면 잘 추가됨
-            return true;
-        }
-        return false;
+        // 중복검사 필요없음.(add니까)
+        boolean flag = foundArtist.getSongList().add(songName);
+        return flag;
+
+//        // 2. 그 가수 객체에서 노래목록을 빼온다(get)
+//        StringList songList = foundArtist.getSongList();
+//        // 3. 그 노래목록에 새노래를 추가한다.
+//        // 없는경우에만 새로 추가해
+//        if (!songList.includes(songName)) {
+//            songList.push(songName);
+//            // 추가되고 안되고 2개니까 boolean으로 변경
+//            // true면 잘 추가됨
+//            return true;
+//        }
+//        return false;
     }
+
+
 
     // 특정 가수의 노래목록을 반환하는 기능
-    public String[] getSongList(String artistName) {
-//        // 1.가수목록을 가져온다
-//        Artist artistByName = findArtistByName(artistName);
-//        // 2.  그 가수의 노래목록을 반환
-//        StringList songList = artistByName.getSongList();
-//        // 3. 그 목록을 배열로 get하기
-//        songList.getsArr();
-
-        return findArtistByName(artistName).getSongList().getsArr();
+    public Set<String> getSongList(String artistName) {
+        return findArtistByName(artistName).getSongList();
     }
+
 
     // 등록된 가수의 수 반환
     public int count() {
-        return artistList.length;
+        return artistList.size();
     }
 
 

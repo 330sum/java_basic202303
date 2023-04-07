@@ -1,4 +1,4 @@
-package day09.songSystem;
+package day09.song;
 
 import java.util.List;
 import java.util.Scanner;

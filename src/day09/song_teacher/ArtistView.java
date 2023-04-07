@@ -1,4 +1,4 @@
-package day09.songSystem_teacher;
+package day09.song_teacher;
 
 import static day07.util.Utility.input;
 import static day07.util.Utility.makeLine;
