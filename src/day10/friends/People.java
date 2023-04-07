@@ -59,4 +59,17 @@ public class People {
         return waitListNames;
     }
 
+    // 맞팔 여부 확인
+    public boolean isMatch(People opponent) {
+        if (
+                this.followings.contains(opponent)
+                && opponent.followings.contains(this)
+        ){
+            return true;
+        }
+        return false;
+    }
+
+
+
 }

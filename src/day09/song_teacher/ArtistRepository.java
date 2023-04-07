@@ -4,7 +4,7 @@ import day04.array.StringList;
 
 public class ArtistRepository {
 
-    static Artist[] artistList; // 가수 배열
+    public static Artist[] artistList; // 가수 배열
 
     static {
         artistList = new Artist[0];
@@ -52,6 +52,7 @@ public class ArtistRepository {
         }
         return null;
     }
+
 
 
     // 기존 가수 객체에 노래를 추가하는 기능
