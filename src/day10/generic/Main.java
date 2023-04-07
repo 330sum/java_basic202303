@@ -1,5 +1,8 @@
 package day10.generic;
 
+import day04.array.StringList;
+import day09.song_teacher.Artist;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -53,7 +56,9 @@ public class Main {
 
         System.out.println(numbers);
 
-//        MyList<Artist>
+        MyList<Artist> artists = new MyList<>();
+        artists.push(new Artist("동반신기", new StringList(null)));
+
 
 
 

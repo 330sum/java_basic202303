@@ -22,13 +22,15 @@ public class MapExample {
         map.put("저녁메뉴", "볶음밥");
 
 
-        // 엔터리(키+벨류)가 몇개인지 세줌
+        // Entry(키+벨류)가 몇개인지 세줌
         System.out.println(map.size()); // 3
 
 
         // get(key) : 데이터 참조
         // 상위캐스팅으로 오니까 다운캐스팅 생각해야함! 항상!
+//        Object dinner = map.get("저녁메뉴");
         String dinner = (String) map.get("저녁메뉴");
+        dinner.toUpperCase();
         System.out.println("dinner = " + dinner);
 
         Artist artist = (Artist) map.get("좋아하는 가수");
@@ -49,10 +51,10 @@ public class MapExample {
         // 반복문 처리
         // 인덱스가 없어서 반복문(fori) 사용 불가
         // 그럼 땡땡이 for문(foreach)은? (인터페이스 iterable이 없어서 안됨)
-        // 자바스크립트에서 쓰던 for in!
+        // 자바스크립트에서 쓰던 for in! (키를 통해서 벨류값을 반복)
         for (Object key : map.keySet()) {
-            System.out.println("key = " + key);
-            System.out.println("value = " + map.get(key));
+            System.out.println("key = " + key); // 키 반복
+            System.out.println("value = " + map.get(key)); // 벨류반복
             Utility.makeLine();
         }
 

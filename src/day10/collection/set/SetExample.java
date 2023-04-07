@@ -48,13 +48,13 @@ public class SetExample {
         List<Integer> numbers = new ArrayList<>(
                 Arrays.asList(1, 1, 1, 3, 3, 5, 7, 9, 9)
         );
-        // 리스트를 Set으로 변환
+        // List를 Set으로 변환
         Set<Integer> numberSet = new HashSet<>();
         numberSet.addAll(numbers);
         System.out.println("numberSet = " + numberSet);
 
         // Set<Integer> numberSet = new HashSet<>(numbers);
-        // 위는 53~54라인과 같은 것
+        // 위는 52~53라인과 같은 것
 
 
 
