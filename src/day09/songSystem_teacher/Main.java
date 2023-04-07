@@ -1,4 +1,4 @@
-package day09.musicManagement_teacher;
+package day09.songSystem_teacher;
 
 public class Main {
 
@@ -8,6 +8,7 @@ public class Main {
 //        artistView.start();
 
         ArtistView.start();
+        // 클래스 자체를 부른 것임!
 
 
 

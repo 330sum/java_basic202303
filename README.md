@@ -17,7 +17,9 @@
 - 파일 -> 설정 -> 버전관리 -> github 계정 등록
 - 하단부 터미널 열고 $ git rm -r --cached
 
-5. 이모티콘 추가방법
+5. 이모티콘 추가방법 😊
 - window키 + .
 - window키 + ;
-😊
+
+6. 워크스페이스가 계속 짜증나게 할때!
+   git rm —cached -r .idea/
