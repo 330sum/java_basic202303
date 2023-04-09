@@ -32,6 +32,11 @@ public class Singer {
     }
 
 
+
+
+
+
+
     public String info() {
         return String.format("%s 가수는 ...%s노래",this.name, this.songList);
     }
