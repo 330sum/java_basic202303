@@ -17,7 +17,7 @@ public class ItemView {
         while (true) {
 
             System.out.println("\n ***** GS25 편의점 ***** ");
-            System.out.printf("# 현재 등록되어 있는 스낵 종류: %d\n", );
+//            System.out.printf("# 현재 등록되어 있는 스낵 종류: %d\n", ctrl.);
             System.out.println("# 1. 스낵 등록하기");
             System.out.println("# 2. 스낵 정보 검색");
             System.out.println("# 3. 나가기");
