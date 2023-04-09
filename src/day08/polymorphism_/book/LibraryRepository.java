@@ -36,11 +36,13 @@ public class LibraryRepository {
 
     //메서드
 
-    // 유저를 등록하는 기능
+    // 유저를 등록하는 기능 (BookUser의 세터 역할)
     public void register(BookUser userInfo) {
         bookUser = userInfo;
         // 입출력과 데이터베이스는 따로 관리
         // this를 못쓰는 이유, static이기 때문에
+        // view에서 데이터를 받아서 여기 저장소에 저장해야 하니까 public으로 열어 둘 것!
+        // (사실 지금 같은경우는 같은패키지여서 상관없지만, 다른 패키지 같은경우면 꼭 public이나, protected로 상속관계를 만들어서 열어둘것)
     }
 
 

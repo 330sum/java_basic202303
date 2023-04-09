@@ -35,10 +35,11 @@ public class LibraryView {
         BookUser userInfo = new BookUser();
 //        userInfo.name; // private이기 때문에 게터세터로 접근해야함
         userInfo.setName(name);
-        userInfo.setAge(age);
+        userInfo.setAge(age); // 나중에 setter로 나이제한 주는 것도 가능
         userInfo.setGender(gender);
 
         // 입력 받은 유저객체를 저장소 보내기
+        // 근데, 현재 저장소로 보내려고 했는데, 저장소가 private로 막혀있어서 메서드를 이용해서 저장소로 보내기!
         repository.register(userInfo);
 
     }
