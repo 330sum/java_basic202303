@@ -8,7 +8,7 @@ public class Actor {
     Gender gender;
     int age;
 
-    public Actor() {
+    public Actor(int actorId, String email, String password, String name, String gender, int age) {
     }
 
     public Actor(int actorId, String email, String password, String name, Gender gender, int age) {

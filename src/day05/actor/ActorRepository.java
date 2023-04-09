@@ -18,8 +18,17 @@ public class ActorRepository {
         }
     }
 
+    int getLastId() {
+        return actorlist[actorlist.length-1].actorId;
+    }
 
-    public void addNewActor() {
+    public void addNewActor(Actor newActor) {
+        Actor[] temp = new Actor[actorlist.length + 1];
+        for (int i = 0; i < actorlist.length; i++) {
+            temp[i] = actorlist[i];
+        }
+        temp[temp.length-1] = newActor;
+        actorlist = temp;
 
     }
 

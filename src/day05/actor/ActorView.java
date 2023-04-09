@@ -69,10 +69,11 @@ public class ActorView {
         String email = input(" - 이메일: ");
         String password = input(" - 비밀번호: ");
         String name = input(" - 이름: ");
-        String gender = input(" - 성별 [M/F]");
+        String gender = input(" - 성별 [M/F]: ");
         int age = Integer.parseInt(input(" - 나이: "));
 
-
+        Actor newActor = new Actor(repository.getLastId()+1, email, password, name, gender, age);
+        repository.addNewActor(newActor);
     }
 
     private String input(String message) {
