@@ -52,7 +52,7 @@ public class MapExample {
         // 인덱스가 없어서 반복문(fori) 사용 불가
         // 그럼 땡땡이 for문(foreach)은? (인터페이스 iterable이 없어서 안됨)
         // 자바스크립트에서 쓰던 for in! (키를 통해서 벨류값을 반복)
-        for (Object key : map.keySet()) {
+        for (String key : map.keySet()) {
             System.out.println("key = " + key); // 키 반복
             System.out.println("value = " + map.get(key)); // 벨류반복
             Utility.makeLine();

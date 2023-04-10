@@ -3,6 +3,8 @@ package day05.member;
 // 이 클래스의 존재 이유(역할) : 1명의 회원정보를 묶어주는 역할
 // Java Bean (value object)
 
+import java.time.LocalDate;
+
 // 여러명의 회원정보를 담아놓는 저장소역할을 하는 클래스가 필요함! -> MemberRepository
 public class Member {
 
@@ -13,6 +15,9 @@ public class Member {
     String memberName;
     Gender gender; // 정해져 있는 경우 열거체(enum)로 만들기! Gender위에서 alt + Enter
     int age;
+
+    // 회원가입일
+    LocalDate regDate; // 회원가입할때, 지금 날짜 읽어서 넣어주기!
 
     public Member(int memberId, String email, String password, String memberName, Gender gender, int age) {
         this.memberId = memberId;

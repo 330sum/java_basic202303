@@ -1,5 +1,7 @@
 package day05.member;
 
+import java.time.LocalDate;
+
 // 역할: 회원 저장소 역할
 public class MemberRepository {
 
@@ -52,6 +54,12 @@ public class MemberRepository {
         for (int i = 0; i < memberList.length; i++) {
             temp[i] = memberList[i];
         }
+
+        // 회원 가입 시간 등록
+        newMember.regDate = LocalDate.now();
+        // 이 코드 가지고 30일 지나면 쿠폰주고, 그런거 가능 (입사연월일, 직무변경일 그런거도 가능)
+
+
         temp[temp.length - 1] = newMember;
         memberList = temp;
 
