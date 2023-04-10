@@ -1,4 +1,4 @@
-package day11.api.BString;
+package day11.api.CString;
 
 public class StrBuilder {
 

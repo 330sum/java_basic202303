@@ -19,30 +19,6 @@ public class ArtistRepository {
         artistList = new HashMap<>();
     }
 
-    // 자동 로드 기능
-    public static void loadFile() {
-
-        // 세이브파일이 존재한다면
-        File f = new File("D:/music.m.sav");
-
-        if (f.exists()) {
-            // 로드해라~
-            try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f))) {
-
-                artistList = (Map<String, Artist>) ois.readObject();
-
-            } catch (FileNotFoundException e) {
-                throw new RuntimeException(e);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            } catch (ClassNotFoundException e) {
-                throw new RuntimeException(e);
-            }
-
-        }
-
-
-    }
 
     // 신규 가수를 첫 노래와 함께 배열에 추가하는 기능
     public void addNewArtist(String artistName, String songName) {
@@ -68,8 +44,8 @@ public class ArtistRepository {
         // 6. 세이브 파일 저장
         autoSave();
 
-
     }
+
 
     // 가수명을 받아서 해당 가수가 등록된 가수인지 확인하는 기능
     public boolean isRegistered(String artistName) {
@@ -115,6 +91,9 @@ public class ArtistRepository {
     }
 
     // 자동 세이브 기능
+
+
+    // 자동 세이브 기능 ===========================================
     public void autoSave() {
 
         // 폴더 없으면 만들어
@@ -126,9 +105,7 @@ public class ArtistRepository {
 
             // 파일안에 맵을 집어넣어라
             oos.writeObject(artistList);
-
-            // 직렬화 되어있는지 확인 (해쉬맵은 직렬화 되있고, String 도 ehldjdlTdma)
-            // Artist는 안되어 있으니까 해주기
+            // 객체 직렬화 필요 (HashMap은 직렬화 되어있고, Artist는 우리가 만든거여서 직렬화 안되어있음. -> 직렬화해주기)
 
 
         } catch (FileNotFoundException e) {
@@ -136,8 +113,35 @@ public class ArtistRepository {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+
+    // 자동 로드 기능 ===========================================
+    public static void loadFile() {
+
+        // 세이브파일이 존재한다면
+        File f = new File("D:/music.m.sav");
+
+        if (f.exists()) {
+            // 로드해라~
+            try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f))) {
+
+                artistList = (Map<String, Artist>) ois.readObject();
+
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+
+        }
+
 
     }
 
 
 }
+
+

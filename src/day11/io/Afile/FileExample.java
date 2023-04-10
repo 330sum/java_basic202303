@@ -1,4 +1,4 @@
-package day11.io.file;
+package day11.io.Afile;
 
 import java.io.File;
 import java.io.IOException;

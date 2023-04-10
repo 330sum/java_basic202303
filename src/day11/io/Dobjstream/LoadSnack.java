@@ -1,4 +1,4 @@
-package day11.io.objstream;
+package day11.io.Dobjstream;
 
 import day11.io.Path;
 
@@ -18,7 +18,6 @@ public class LoadSnack {
 
         for (Snack s : snackList) {
             System.out.println(s);
-
         }
     }
 
@@ -30,7 +29,8 @@ public class LoadSnack {
             ObjectInputStream ois = new ObjectInputStream(fis);
             List<Snack> object = (List<Snack>) ois.readObject();
             snackList = object;
-
+            // 리턴 받으면 Object로 떨어짐. 근데, 우리가 저장한 데이터는 List이기 때문에, List로 다운 캐스팅!
+            // 세이브한 파일(ois.readObject())에서 읽은 객체를 snakList로 읽어주는 것
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

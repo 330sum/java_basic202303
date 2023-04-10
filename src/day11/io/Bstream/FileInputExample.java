@@ -1,4 +1,4 @@
-package day11.io.stream;
+package day11.io.Bstream;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

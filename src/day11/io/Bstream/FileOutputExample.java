@@ -1,4 +1,4 @@
-package day11.io.stream;
+package day11.io.Bstream;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -14,10 +14,13 @@ public class FileOutputExample {
 
         // 데이터를 외부로 내보낼 때, 출력스트림 (OutputStream 추상클래스 -> 객체생성불가, 자식이용해서 객체생성)
 //        OutputStream fos = null; // 지역변수는 값 꼭 초기화 해줄 것 (필드는 자동 초기화됨)
+        // 객체교환성 생각해서 객체 선언부분에는 부모타입할지, 자식타입할지 정하기~
         try (OutputStream fos = new FileOutputStream("D:/exercise/dog.txt");) {
 
 
             fos.write(msg.getBytes());
+            // write에 커서 올리면 오버로딩(byte나 int)되어있음
+            // (String은 없음. 그래서 String을 Byte화 하는 메서드 사용 -> getByte()) 근데, 이거 안쓰니까 그냥 보기만해..
             System.out.println("파일 저장에 성공!");
 
         } catch (FileNotFoundException e) {

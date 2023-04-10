@@ -71,7 +71,8 @@ public class DateTime {
         // 이미 종료된 이벤트입니다. (유효기간이 며칠남았습니다)
         //nowDataTime.isAfter();
 
-
+        // 사원정보, 입사년월일, 직무변경일 같은 곳에도 사용 가능
+        // day05 - member 확인하기
 
     }
 }

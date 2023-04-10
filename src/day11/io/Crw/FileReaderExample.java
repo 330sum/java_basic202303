@@ -1,4 +1,4 @@
-package day11.io.rw;
+package day11.io.Crw;
 
 import day05.member.Gender;
 import day05.member.Member;
@@ -18,11 +18,13 @@ public class FileReaderExample {
 
 //            int read = fr.read();
 //            System.out.println((char)read);
+            // 또 한글자씩 읽음... 그래서 우리가 보조스트림(Buffered, ObjectStream)을 사용함!
+            // 메인스트림(is,os,r,w)
 
 
             // 버퍼스트림
-            BufferedReader br = new BufferedReader(fr);
-            String s = br.readLine();// 한줄한줄 버퍼에 쌓으면서 읽음
+            BufferedReader br = new BufferedReader(fr); // 생성자안에 메인스트림(fr)을 넣어줌
+            String s = br.readLine();// 한줄한줄 버퍼에 쌓아서 줌. 한줄씩 받을 수 있음
             System.out.println("s = " + s);
 
             String[] split = s.split(",");

@@ -19,9 +19,11 @@ public class Main {
         System.out.println(p1.toString()); // 주소값 // toString 오버라이딩하기
         System.out.println(p2);
 
-        System.out.println(p1 == p2);
+        System.out.println(p1 == p2); // false
+        // 이 p1,p2,를 set에 넣으면 주소값이 다르기 때문에 다른 두개의 객체로 보고 저장할 수 있음.
 
-        System.out.println(p1.equals(p2));
+        System.out.println(p1.equals(p2)); // true
+        // Pen에서 equals오버라이딩 하면서 hashCode도 오버라이딩 함
 
         // =========================================
         Set<Pen> penSet = new HashSet<>();

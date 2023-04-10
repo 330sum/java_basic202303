@@ -1,4 +1,4 @@
-package day11.io.rw;
+package day11.io.Crw;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,7 +10,7 @@ public class FileWriterExample {
 
         try (FileWriter fw = new FileWriter("D:/exercise/메롱.txt")) {
 
-            String s = "메롱메로메롱\n약오르짘ㅋㅋㅋㅋ케케케";
+            String s = "메롱메롱메롱\n약오르짘ㅋㅋㅋㅋ케케케";
             fw.write(s);
 
         } catch (IOException e) {

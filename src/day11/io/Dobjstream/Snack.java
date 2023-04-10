@@ -1,6 +1,9 @@
-package day11.io.objstream;
+package day11.io.Dobjstream;
 
-public class Snack {
+import java.io.Serializable;
+
+// 객체를 직렬화해야 바이트스트림을 통과할 수 있음.
+public class Snack implements Serializable {
 
     public enum Taste {
         GOOD, BAD, SOSO
