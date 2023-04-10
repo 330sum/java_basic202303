@@ -2,9 +2,10 @@ package day10.collection.song;
 
 import day04.array.StringList;
 
+import java.io.Serializable;
 import java.util.Set;
 
-public class Artist {
+public class Artist implements Serializable {
     private String name;
     public Set<String> songList;
 

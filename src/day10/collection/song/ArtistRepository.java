@@ -2,6 +2,7 @@ package day10.collection.song;
 
 import day04.array.StringList;
 
+import java.io.*;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -16,6 +17,31 @@ public class ArtistRepository {
 
     static {
         artistList = new HashMap<>();
+    }
+
+    // 자동 로드 기능
+    public static void loadFile() {
+
+        // 세이브파일이 존재한다면
+        File f = new File("D:/music.m.sav");
+
+        if (f.exists()) {
+            // 로드해라~
+            try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f))) {
+
+                artistList = (Map<String, Artist>) ois.readObject();
+
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+
+        }
+
+
     }
 
     // 신규 가수를 첫 노래와 함께 배열에 추가하는 기능
@@ -39,6 +65,10 @@ public class ArtistRepository {
         // 5. 가수맵에 해당 가수 객체 추가
         artistList.put(artist.getName(), artist);
 
+        // 6. 세이브 파일 저장
+        autoSave();
+
+
     }
 
     // 가수명을 받아서 해당 가수가 등록된 가수인지 확인하는 기능
@@ -46,12 +76,10 @@ public class ArtistRepository {
         return artistList.containsKey(artistName);
     }
 
-
     // 가수명을 통해 가수 객체 정보를 반환하는 기능
     public Artist findArtistByName(String artistName) {
         return artistList.get(artistName);
     }
-
 
     // 기존 가수 객체에 노래를 추가하는 기능
     public boolean addNewSong(String artistName, String songName) {
@@ -60,6 +88,7 @@ public class ArtistRepository {
         // 2. 그 가수 객체에서 노래목록을 빼온다(get)
         // 중복검사 필요없음.(add니까)
         boolean flag = foundArtist.getSongList().add(songName);
+        if (flag) autoSave();
         return flag;
 
 //        // 2. 그 가수 객체에서 노래목록을 빼온다(get)
@@ -75,17 +104,39 @@ public class ArtistRepository {
 //        return false;
     }
 
-
-
     // 특정 가수의 노래목록을 반환하는 기능
     public Set<String> getSongList(String artistName) {
         return findArtistByName(artistName).getSongList();
     }
 
-
     // 등록된 가수의 수 반환
     public int count() {
         return artistList.size();
+    }
+
+    // 자동 세이브 기능
+    public void autoSave() {
+
+        // 폴더 없으면 만들어
+        File f = new File("D:/music");
+        if (!f.exists()) f.mkdir();
+
+        // 세이브 파일 만들어
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("D:/music/m.sav"))) {
+
+            // 파일안에 맵을 집어넣어라
+            oos.writeObject(artistList);
+
+            // 직렬화 되어있는지 확인 (해쉬맵은 직렬화 되있고, String 도 ehldjdlTdma)
+            // Artist는 안되어 있으니까 해주기
+
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
 

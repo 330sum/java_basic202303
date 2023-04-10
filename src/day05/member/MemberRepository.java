@@ -1,5 +1,7 @@
 package day05.member;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 
 // 역할: 회원 저장소 역할
@@ -62,6 +64,25 @@ public class MemberRepository {
 
         temp[temp.length - 1] = newMember;
         memberList = temp;
+
+
+        // save파일 생성
+        try (FileWriter fw = new FileWriter("D:/exercise/member.txt")) {
+
+            String saveInfo = "";
+            saveInfo += newMember.memberId;
+            saveInfo += "," + newMember.email;
+            saveInfo += "," + newMember.password;
+            saveInfo += "," + newMember.memberName;
+            saveInfo += "," + newMember.gender;
+            saveInfo += "," + newMember.age;
+
+            fw.write(saveInfo + "\n");
+//            fw.append(saveInfo + "\n");
+
+        } catch (IOException e) {
+            System.out.println("파일 저장 실패!");
+        }
 
         return true;
     }
@@ -126,8 +147,10 @@ public class MemberRepository {
 
 
 // 시그니처와 파라미터가 다 있는경우, /** + Enter 치면 @param 작성할 수 있도록 됨
+
     /**
      * 비밀번호를 수정하는 기능
+     *
      * @param email       : 수정 대상의 이메일
      * @param newPassword : 변경할 새로운 비밀번호
      */
@@ -146,6 +169,7 @@ public class MemberRepository {
 
     /**
      * 회원 삭제하는 기능
+     *
      * @param : 삭제할 대상의 이메일
      */
     void removeMember(String email) {

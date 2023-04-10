@@ -11,7 +11,8 @@ public class FileOutputExample {
 
         String msg = "멍멍이는~~ 왈왈~\n 하하호호";
 
-        // 데이터를 외부로 내보낼 때, 출력스트림 (추상클래스 -> 객체생성불가, 자식이용해서 객체생성)
+
+        // 데이터를 외부로 내보낼 때, 출력스트림 (OutputStream 추상클래스 -> 객체생성불가, 자식이용해서 객체생성)
 //        OutputStream fos = null; // 지역변수는 값 꼭 초기화 해줄 것 (필드는 자동 초기화됨)
         try (OutputStream fos = new FileOutputStream("D:/exercise/dog.txt");) {
 
