@@ -38,7 +38,7 @@ public class MappingApple {
         return colorList;
     }
 
-    public static <X, Y> List<Y> map (
+/*    public static <X, Y> List<Y> map (
             List<X> basket
             , GenericFunction<X, Y> mapper
     ) {
@@ -50,7 +50,7 @@ public class MappingApple {
         }
         return mappedList;
 
-    }
+    }*/
 
 
 

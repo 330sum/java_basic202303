@@ -144,16 +144,14 @@ public class Main {
                 ,new Member(5, "abc5@ddd.com", "1111", "송길동", Gender.MALE, 63)
         );
 
-        List<String> nameList = map(memberList, new GenericFunction<Member, String>() {
-            @Override
-            public String apply(Member m) {
-                return m.memberName;
-            }
-        });
-        System.out.println("nameList = " + nameList);
-
-
-
+//        List<String> nameList = map(memberList, new GenericFunction<Member, String>() {
+//            @Override
+//            public String apply(Member m) {
+//                return m.memberName;
+//            }
+//        });
+//        System.out.println("nameList = " + nameList);
+//
 
 
 
