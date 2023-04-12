@@ -1,4 +1,4 @@
-package day13.dd;
+package day13.lambda8;
 
 public class Dish {
 

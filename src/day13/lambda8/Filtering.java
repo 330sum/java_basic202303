@@ -1,8 +1,6 @@
-package day13.dd;
+package day13.lambda8;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Filtering {

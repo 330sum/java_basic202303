@@ -29,29 +29,31 @@
    ## 자바 8 람다 문법
 - 여러가지 람다 표현식
     1. `(String s) -> s.length()` : String형식의 파라미터 하나를 가지며 int를 반환한다. 람다표현식에는 return이 함축되어 있다.
-    1. `(Apple a) -> a.getWeight() > 150` : Apple형식의 파라미터 하나를 가지며 boolean을 반환한다.
-    1. int형식의 2개의 파라미터를 가지며 리턴값이 없다.
+    2. `(Apple a) -> a.getWeight() > 150` : Apple형식의 파라미터 하나를 가지며 boolean을 반환한다.
+    3. int형식의 2개의 파라미터를 가지며 리턴값이 없다.
         ```
              (int x, int y) -> {
                  System.out.println("Result:");
                  System.out.println(x + y);
              }
         ```
-    1. `() -> 42` : 파라미터가 없으며 42를 반환한다.
+    4. `() -> 42` : 파라미터가 없으며 42를 반환한다.
 
 - 제공되는 함수형 인터페이스
 
-함수형 인터페이스 | 함수 디스크립터 |
----|---|
-Predicate<T> | T -> boolean
-Consumer<T> | T -> void
-Function<T, R> | T -> R
-Supplier<T> | () -> T
-UnaryOperator<T> | T -> T
-BinaryOperator<T> | (T, T) -> T
-BiPredicate<L, R> | (T, U) -> boolean
-BiConsumer<T, U> | (T, U) -> void
-BiFunction<T, U, R> | (T, U) -> R
+| |
+함수형 인터페이스           | 함수 디스크립터 |
+---------------------|---|
+ Predicate<T>        | T -> boolean
+ Consumer<T>         | T -> void
+ Function<T, R>      | T -> R
+ Supplier<T>         | () -> T
+ UnaryOperator<T>    | T -> T
+ BinaryOperator<T>   | (T, T) -> T
+ BiPredicate<L, R>   | (T, U) -> boolean
+ BiConsumer<T, U>    | (T, U) -> void
+ BiFunction<T, U, R> | (T, U) -> R
+||
 
 - 메서드 참조
     - `(args) -> ClassName.staticMethod(args)` => `ClassName::staticMethod`

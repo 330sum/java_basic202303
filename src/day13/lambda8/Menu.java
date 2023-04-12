@@ -1,6 +1,4 @@
-package day13.dd;
-
-import day13.dd.Dish;
+package day13.lambda8;
 
 import java.util.List;
 
