@@ -9,12 +9,12 @@ import java.time.LocalDate;
 public class Member {
 
     // 회원정보: 회원식별번호, 이메일, 비밀번호, 이름, 성별, 나이
-    int memberId; // 회원이 900경 가입할 거 같으면 타입long으로 하기 ㅋㅋㅋ
-    String email;
-    String password;
-    String memberName;
-    Gender gender; // 정해져 있는 경우 열거체(enum)로 만들기! Gender위에서 alt + Enter
-    int age;
+    public int memberId; // 회원이 900경 가입할 거 같으면 타입long으로 하기 ㅋㅋㅋ
+    public String email;
+    public String password;
+    public String memberName;
+    public Gender gender; // 정해져 있는 경우 열거체(enum)로 만들기! Gender위에서 alt + Enter
+    public int age;
 
     // 회원가입일
     LocalDate regDate; // 회원가입할때, 지금 날짜 읽어서 넣어주기!
