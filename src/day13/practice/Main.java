@@ -24,7 +24,7 @@ public class Main {
 
             // 연습 1: 2021년에 발생한 모든 거래를 찾아 거래액 오름차 정렬(작은 값에서 큰 값).
             // List<Transaction>
-            List<Transaction> transactionBy2021 = transactions.stream()
+            transactions.stream()
                     .sorted(Comparator.comparing(year -> year.getYear()))
                     .collect(Collectors.toList());
 
