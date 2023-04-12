@@ -1,4 +1,4 @@
-package day13.lambda8;
+package day13.stream;
 
 public class SimpleDishType {
 

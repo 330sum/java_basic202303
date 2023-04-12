@@ -1,10 +1,10 @@
-package day13.lambda8;
+package day13.stream;
 
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-import static day13.lambda8.Menu.menuList;
+import static day13.stream.Menu.menuList;
 
 public class Filtering {
 

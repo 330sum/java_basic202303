@@ -1,4 +1,4 @@
-package day13.lambda8;
+package day13.stream;
 
 // 요리 정보 중에 이름과 칼로리만 관리하는 객체
 public class SimpleDish {

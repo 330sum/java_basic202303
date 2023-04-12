@@ -1,4 +1,4 @@
-package day13.lambda8;
+package day13.stream;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import static day13.lambda8.Menu.menuList;
+import static day13.stream.Menu.menuList;
 
 // filter -> return 데이터 추려짐 리턴타입도 바뀜
 // map -> return 갯수 동일, 타입 동일

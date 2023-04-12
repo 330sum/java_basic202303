@@ -1,8 +1,8 @@
-package day13.lambda8;
+package day13.stream;
 
 import java.util.Comparator;
 
-import static day13.lambda8.Menu.menuList;
+import static day13.stream.Menu.menuList;
 
 public class Finding {
 
